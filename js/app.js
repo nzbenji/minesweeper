@@ -10,14 +10,11 @@ const Minesweeper = (() => {
         grid: null,
         cols: null
     }
-    // let grid;
-    // let cols;
     let rows;
     let w = 40;
 
     const render = () => {
         //Board.init();
-
         state.cols = Math.floor(400 / w);
         rows = Math.floor(400 / w)
         state.grid = make2DArray(state.cols, rows);
